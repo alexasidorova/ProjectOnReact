@@ -1,10 +1,7 @@
-console.log('main.js');
-import '../tasks/tasks';
-console.log('main.js');
+import React from 'react';
+import ReactDom from 'react-dom';
+import Root from './root.jsx';
 
-class Foo {
-    bar = 123;
-}
+const rootElement = document.querySelector('#root');
 
-console.log(new Foo().bar);
-
+ReactDom.render(<Root />, rootElement);

@@ -1,0 +1,61 @@
+.App {
+  background: url("2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: rgba(256, 256, 256, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: calc(15px + 2vmin);
+  color: rgb(190, 22, 36);
+}
+
+.App-calc {
+  background-color: rgba(256, 256, 256, 0.8);
+  color: rgb(190, 22, 36);
+  font-size: calc(5px + 2vmin);
+  text-align: center;
+  height: 70vh;
+  width: 30vw;
+  top: 35vh;
+  right: 0;
+}
+
+.App-calc_header {
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.weight,
+.size,
+.years {
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+}
+
+#weight,
+#size,
+#years {
+  width: 40px;
+}
+
+#result {
+  height: 20px;
+  width: 40px;
+  background-color: rgba(256, 256, 256, 0.8);
+}

@@ -1,0 +1,292 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "catetegory": "грибы",
+      "name": "Белые грибы жареные",
+      "protein": "4.6",
+      "lipid": "11.5",
+      "carbs": "10.7",
+      "calories": "162"
+    },
+    {
+      "id": 2,
+      "catetegory": "грибы",
+      "name": "Белые маринованные",
+      "protein": "3.0",
+      "lipid": "0.5",
+      "carbs": "2.0",
+      "calories": "24"
+    },
+    {
+      "id": 3,
+      "catetegory": "грибы",
+      "name": "Белые свежие",
+      "protein": "3.7",
+      "lipid": "1.7",
+      "carbs": "1.1",
+      "calories": "34"
+    },
+    {
+      "id": 4,
+      "catetegory": "грибы",
+      "name": "Белые сушеные",
+      "protein": "23.4",
+      "lipid": "6.4",
+      "carbs": "31",
+      "calories": "282"
+    },
+    {
+      "id": 5,
+      "catetegory": "грибы",
+      "name": "Вешенки маринованные",
+      "protein": "1.0",
+      "lipid": "1.5",
+      "carbs": "0.0",
+      "calories": "23"
+    },
+    {
+      "id": 6,
+      "catetegory": "грибы",
+      "name": "Грибное ризотто Бондюэль в томатном соусе",
+      "protein": "2.4",
+      "lipid": "0.8",
+      "carbs": "16.3",
+      "calories": "82"
+    },
+    {
+      "id": 7,
+      "catetegory": "грибы",
+      "name": "Грибной жульен Hortex",
+      "protein": "2.6",
+      "lipid": "0.5",
+      "carbs": "2.6",
+      "calories": "30"
+    },
+    {
+      "id": 8,
+      "catetegory": "грибы",
+      "name": "Грузди маринованные",
+      "protein": "1.0",
+      "lipid": "1.8",
+      "carbs": "0.0",
+      "calories": "26"
+    },
+    {
+      "id": 9,
+      "catetegory": "грибы",
+      "name": "Грузди свежие",
+      "protein": "1.8",
+      "lipid": "0.5",
+      "carbs": "0.8",
+      "calories": "16"
+    },
+    {
+      "id": 10,
+      "catetegory": "грибы",
+      "name": "Лесные грибы Hortex",
+      "protein": "2.2",
+      "lipid": "0.7",
+      "carbs": "3.9",
+      "calories": "35"
+    },
+    {
+      "id": 11,
+      "catetegory": "грибы",
+      "name": "Лесные грибы Hortex с картошкой",
+      "protein": "2.6",
+      "lipid": "1.5",
+      "carbs": "5.5",
+      "calories": "51"
+    },
+    {
+      "id": 12,
+      "catetegory": "грибы",
+      "name": "Лисички свежие",
+      "protein": "1.6",
+      "lipid": "1.1",
+      "carbs": "2.2",
+      "calories": "20"
+    },
+    {
+      "id": 13,
+      "catetegory": "грибы",
+      "name": "Лисички сушёные",
+      "protein": "22.3",
+      "lipid": "7.6",
+      "carbs": "24.2",
+      "calories": "261"
+    },
+    {
+      "id": 14,
+      "catetegory": "грибы",
+      "name": "Маслята маринованные",
+      "protein": "3.0",
+      "lipid": "0.5",
+      "carbs": "1.4",
+      "calories": "18"
+    },
+    {
+      "id": 15,
+      "catetegory": "грибы",
+      "name": "Маслята свежие",
+      "protein": "2.4",
+      "lipid": "0.7",
+      "carbs": "1.7",
+      "calories": "19"
+    },
+    {
+      "id": 16,
+      "catetegory": "грибы",
+      "name": "Опята маринованные",
+      "protein": "1.8",
+      "lipid": "1.0",
+      "carbs": "0.4",
+      "calories": "18"
+    },
+    {
+      "id": 17,
+      "catetegory": "грибы",
+      "name": "Опята свежие",
+      "protein": "2",
+      "lipid": "1.0",
+      "carbs": "0.4",
+      "calories": "18"
+    },
+    {
+      "id": 18,
+      "catetegory": "грибы",
+      "name": "Подберёзовики свежие",
+      "protein": "2.3",
+      "lipid": "0.9",
+      "carbs": "3.7",
+      "calories": "31"
+    },
+    {
+      "id": 19,
+      "catetegory": "грибы",
+      "name": "Подберёзовики сушёные",
+      "protein": "23.5",
+      "lipid": "9.2",
+      "carbs": "14.3",
+      "calories": "231"
+    },
+    {
+      "id": 20,
+      "catetegory": "грибы",
+      "name": "Подосиновики свежие",
+      "protein": "3.3",
+      "lipid": "0.5",
+      "carbs": "3.7",
+      "calories": "22"
+    },
+    {
+      "id": 21,
+      "catetegory": "грибы",
+      "name": "Подосиновики сушёные",
+      "protein": "35.4",
+      "lipid": "5.4",
+      "carbs": "33.2",
+      "calories": "315"
+    },
+    {
+      "id": 22,
+      "catetegory": "грибы",
+      "name": "Шампиньоны свежие",
+      "protein": "2.2",
+      "lipid": "0.5",
+      "carbs": "6.8",
+      "calories": "34"
+    },
+    {
+      "id": 23,
+      "catetegory": "грибы",
+      "name": "Шампиньоны консервированные",
+      "protein": "1.6",
+      "lipid": "0.2",
+      "carbs": "0.9",
+      "calories": "12"
+    },
+    {
+      "id": 24,
+      "catetegory": "крупы и каши",
+      "name": "Булгур",
+      "protein": "12.3",
+      "lipid": "1.3",
+      "carbs": "57.6",
+      "calories": "342"
+    },
+    {
+      "id": 25,
+      "catetegory": "крупы и каши",
+      "name": "Горох Пассим колотый",
+      "protein": "23.0",
+      "lipid": "1.6",
+      "carbs": "48.1",
+      "calories": "299"
+    },
+    {
+      "id": 26,
+      "catetegory": "крупы и каши",
+      "name": "Готовый завтрак Nestle Kosmostars звездочки и галактики медовые",
+      "protein": "7.2",
+      "lipid": "5.0",
+      "carbs": "76.2",
+      "calories": "400"
+    },
+    {
+      "id": 27,
+      "catetegory": "крупы и каши",
+      "name": "Гречка зелёная для проращиванияе",
+      "protein": "10.8",
+      "lipid": "3.2",
+      "carbs": "54.4",
+      "calories": "295"
+    },
+    {
+      "id": 28,
+      "catetegory": "крупы и каши",
+      "name": "Гречневая крупа (ядрица)",
+      "protein": "12.6",
+      "lipid": "3.3",
+      "carbs": "62.1",
+      "calories": "313"
+    },
+    {
+      "id": 29,
+      "catetegory": "крупы и каши",
+      "name": "Гречневые хлопья",
+      "protein": "9.0",
+      "lipid": "2.4",
+      "carbs": "67.0",
+      "calories": "330"
+    },
+    {
+      "id": 30,
+      "catetegory": "крупы и каши",
+      "name": "Киноа",
+      "protein": "14.1",
+      "lipid": "6.1",
+      "carbs": "57.2",
+      "calories": "368"
+    },
+    {
+      "id": 31,
+      "catetegory": "крупы и каши",
+      "name": "Кукурузная крупа",
+      "protein": "8.3",
+      "lipid": "1.2",
+      "carbs": "75.0",
+      "calories": "337"
+    },
+    {
+      "id": 32,
+      "catetegory": "крупы и каши",
+      "name": "Кукурузная крупа",
+      "protein": "8.3",
+      "lipid": "1.2",
+      "carbs": "75.0",
+      "calories": "337"
+    }
+  ]
+}
