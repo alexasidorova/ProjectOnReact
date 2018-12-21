@@ -111,7 +111,7 @@ render() {
          <input type="radio" name="group2"></input><label>{this.state[4].options[2].label}</label>
          <input type="radio" name="group2"></input><label>{this.state[4].options[3].label}</label>
          <input type="radio" name="group2"></input><label>{this.state[4].options[0].label}</label>              */}
-          <button type="button" onClick={this.onClickButton}>
+          <button id='buttonPage1' type="button" onClick={this.onClickButton}>
             Посчитать
           </button>
           {/* <div id='totalCalories'>Тебе необходимо  {result} калорий в день!</div> */}

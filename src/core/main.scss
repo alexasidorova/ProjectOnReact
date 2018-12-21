@@ -81,15 +81,13 @@ input::-webkit-inner-spin-button {
   width: 40px;
   background-color: rgba(256, 256, 256, 0.8);
 }
-#page1{
-
+#page1 {
 }
 
-#page2{
-  
+#page2 {
 }
 
-#listFoods{
+#listFoods {
   background-color: rgba(256, 256, 256, 0.8);
   color: rgb(190, 22, 36);
   font-size: calc(1px + 2vmin);
@@ -97,5 +95,22 @@ input::-webkit-inner-spin-button {
   // height: 70vh;
   width: 30rem;
   // top: 35vh;
-  
+}
+#buttonPage1 {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px rgb(190, 22, 36) inset, 0 0 0 0 rgb(190, 22, 36);
+  font-family: "Times New Roman", sans-serif;
+  font-size: calc(5px + 2vmin);
+  // letter-spacing: 2px;
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+#buttonPage1:hover {
+  box-shadow: 0 0 10px 0 rgb(190, 22, 36) inset, 0 0 10px 4px rgb(190, 22, 36);
+  color: rgb(190, 22, 36);
 }

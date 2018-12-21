@@ -59,7 +59,7 @@ class Foods extends Component {
     //     <input className="add-task--button" type="submit" value="Добавить" />
     //   </form>
 
-      this.state.foods.map(function (it) {
+      this.state.foods.map((it) => {
         console.log(it);
         console.log(this.onClick);
           <Food data={it} onClick={this.onClick} />;
