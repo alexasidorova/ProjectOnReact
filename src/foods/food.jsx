@@ -1,9 +1,12 @@
 import React, { PureComponent, createRef } from 'react';
 
 class Food extends PureComponent {
-  onClick = () => {
-    alert('click');
-  };
+  onClick = () => this.props.onClick(
+    this.props.protein,
+    this.props.lipids,
+    this.props.carbs,
+    this.props.calories
+  );
 
   render() {
     const { data } = this.props;

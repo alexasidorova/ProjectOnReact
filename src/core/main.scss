@@ -39,7 +39,7 @@ body {
   height: 70vh;
   width: 30vw;
   top: 35vh;
-  right: 0;
+  margin: 0 auto;
 }
 
 .App-calc_header {
@@ -80,4 +80,22 @@ input::-webkit-inner-spin-button {
   height: 20px;
   width: 40px;
   background-color: rgba(256, 256, 256, 0.8);
+}
+#page1{
+
+}
+
+#page2{
+  
+}
+
+#listFoods{
+  background-color: rgba(256, 256, 256, 0.8);
+  color: rgb(190, 22, 36);
+  font-size: calc(1px + 2vmin);
+  text-align: center;
+  // height: 70vh;
+  width: 30rem;
+  // top: 35vh;
+  
 }

@@ -1,11 +1,15 @@
 import React, { Component, createRef } from 'react';
 import createRequest from 'core/create-request';
 import { addFoods } from 'core/api-config';
-import Food from "foods/food";
+import Food from 'foods/food';
 
 class Foods extends Component {
   state = {
-    foods: []
+    foods: [],
+    currentlipids: '',
+    currentcarbs: '',
+    currentprotein: '',
+    currentcalories: ''
   };
 
   textRef = createRef();
@@ -20,6 +24,31 @@ class Foods extends Component {
     });
   }
 
+  onClick(protein, lipids, carbs, calories) {
+    this.setState({
+      currentprotein: protein,
+      currentlipids: lipids,
+      currentcarbs: carbs,
+      currentcalories: calories
+    });
+    return (
+      <table>
+        <tr>
+          <td>Белки</td>
+          <td>Жиры</td>
+          <td>Углеводы</td>
+          <td>Калории</td>
+        </tr>
+        <tr>
+          <td>{this.state.currentprotein}</td>
+          <td>{this.state.currentlipids}</td>
+          <td>{this.state.currentcarbs}</td>
+          <td>{this.state.currentcalories}</td>
+        </tr>
+      </table>
+    );
+  };
+
   render() {
     {
       console.log(this.state.foods);
@@ -29,11 +58,13 @@ class Foods extends Component {
     //     <input className="add-task--field" type="text" name="text" ref={this.textRef} />
     //     <input className="add-task--button" type="submit" value="Добавить" />
     //   </form>
-    this.state.foods.map(function(it) {
+
+      this.state.foods.map(function (it) {
         console.log(it);
-        return <Food data={it}/>
-    })
-    )
+        console.log(this.onClick);
+          <Food data={it} onClick={this.onClick} />;
+      })
+    );
   }
 }
 
