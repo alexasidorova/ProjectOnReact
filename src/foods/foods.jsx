@@ -19,52 +19,48 @@ class Foods extends Component {
       if (response.status === 'OK') {
         setTimeout(() => {
           this.setState({ foods: response.data });
-        }, 2000);
+        }, 50);
       }
     });
   }
 
-  onClick(protein, lipids, carbs, calories) {
+  onClick = (protein, lipids, carbs, calories) => {
     this.setState({
       currentprotein: protein,
       currentlipids: lipids,
       currentcarbs: carbs,
       currentcalories: calories
     });
-    return (
-      <table>
-        <tr>
-          <td>Белки</td>
-          <td>Жиры</td>
-          <td>Углеводы</td>
-          <td>Калории</td>
-        </tr>
-        <tr>
-          <td>{this.state.currentprotein}</td>
-          <td>{this.state.currentlipids}</td>
-          <td>{this.state.currentcarbs}</td>
-          <td>{this.state.currentcalories}</td>
-        </tr>
-      </table>
-    );
+    console.log('onclick',this.state);
   };
 
   render() {
-    {
-      console.log(this.state.foods);
-    }
     return (
     //     <form className="add-task" onSubmit={this.onSubmit}>
     //     <input className="add-task--field" type="text" name="text" ref={this.textRef} />
     //     <input className="add-task--button" type="submit" value="Добавить" />
     //   </form>
-
-      this.state.foods.map((it) => {
-        console.log(it);
-        console.log(this.onClick);
-          <Food data={it} onClick={this.onClick} />;
+    <div id='wrapperForTable'>
+    <table id='resultTable'>
+    <tr>
+      <td>Белки</td>
+      <td>Жиры</td>
+      <td>Углеводы</td>
+      <td>Калории</td>
+    </tr>
+    <tr>
+      <td>{this.state.currentprotein}</td>
+      <td>{this.state.currentlipids}</td>
+      <td>{this.state.currentcarbs}</td>
+      <td>{this.state.currentcalories}</td>
+    </tr>
+  </table>
+      {this.state.foods.map((it) => {
+        return  <Food data={it} onClick={this.onClick} />;
       })
-    );
+    }
+    </div>
+    )
   }
 }
 

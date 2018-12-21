@@ -97,24 +97,11 @@ render() {
           }
           
           
-          {/* <label className='gender'>{this.state[0].label}
-        <input type={this.state[0].type} name={this.state[0].name} onChange={this.handleChange}></input>
-        {this.state[0].options[0].label} </label>  */}
-          {/* <label>
-        <input type={this.state[0].type} name={this.state[0].name} onChange={this.handleChange}></input> {this.state[0].options[1].label} </label> */}
-          {/* <label>{this.state[1].label} <input type={this.state[1].type} name={this.state[1].name} onChange={this.handleChange}></input></label>
-       <label>{this.state[2].label} <input type={this.state[2].type} name={this.state[2].name} onChange={this.handleChange}></input></label>
-       <label>{this.state[3].label} <input type={this.state[3].type} name={this.state[3].name} onChange={this.handleChange}></input></label>
-       <label>{this.state[4].label}</label>
-       <input type={this.state[4].type} name={this.state[4].name}></input>
-       <label>{this.state[4].options[0].label}<input type={this.state[4].options[0].label} name="group2"></input>{this.state[4].options[1].label}</label>
-         <input type="radio" name="group2"></input><label>{this.state[4].options[2].label}</label>
-         <input type="radio" name="group2"></input><label>{this.state[4].options[3].label}</label>
-         <input type="radio" name="group2"></input><label>{this.state[4].options[0].label}</label>              */}
+         
           <button id='buttonPage1' type="button" onClick={this.onClickButton}>
             Посчитать
           </button>
-          {/* <div id='totalCalories'>Тебе необходимо  {result} калорий в день!</div> */}
+         
           <div id='totalCalories'>Тебе необходимо  {this.state.result} калорий в день!</div>
         </form>
         

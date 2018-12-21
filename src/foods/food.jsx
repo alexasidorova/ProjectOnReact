@@ -1,17 +1,19 @@
 import React, { PureComponent, createRef } from 'react';
 
 class Food extends PureComponent {
-  onClick = () => this.props.onClick(
-    this.props.protein,
-    this.props.lipids,
-    this.props.carbs,
-    this.props.calories
-  );
+  onClick = () => {
+    console.log('CLICK', this.props);
+    this.props.onClick(
+      this.props.data.protein,
+      this.props.data.lipids,
+      this.props.data.carbs,
+      this.props.data.calories
+    );
+  };
 
   render() {
     const { data } = this.props;
-    console.log(data);
-    return <div onClick={this.onClick}>{data.catetegory}</div>;
+    return <div onClick={this.onClick}>{data.name}</div>;
   }
 }
 

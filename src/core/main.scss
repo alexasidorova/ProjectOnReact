@@ -82,9 +82,43 @@ input::-webkit-inner-spin-button {
   background-color: rgba(256, 256, 256, 0.8);
 }
 #page1 {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px rgb(190, 22, 36) inset, 0 0 0 0 rgb(190, 22, 36);
+  font-family: "Times New Roman", sans-serif;
+  font-size: calc(5px + 2vmin);
+  // letter-spacing: 2px;
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+#page1:hover {
+  box-shadow: 0 0 10px 0 rgb(190, 22, 36) inset, 0 0 10px 4px rgb(190, 22, 36);
+  color: rgb(190, 22, 36);
+  background-color: rgba(256, 256, 256, 0.8);
 }
 
 #page2 {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px rgb(190, 22, 36) inset, 0 0 0 0 rgb(190, 22, 36);
+  font-family: "Times New Roman", sans-serif;
+  font-size: calc(5px + 2vmin);
+  // letter-spacing: 2px;
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+#page2:hover {
+  box-shadow: 0 0 10px 0 rgb(190, 22, 36) inset, 0 0 10px 4px rgb(190, 22, 36);
+  color: rgb(190, 22, 36);
+  background-color: rgba(256, 256, 256, 0.8);
 }
 
 #listFoods {
@@ -113,4 +147,31 @@ input::-webkit-inner-spin-button {
 #buttonPage1:hover {
   box-shadow: 0 0 10px 0 rgb(190, 22, 36) inset, 0 0 10px 4px rgb(190, 22, 36);
   color: rgb(190, 22, 36);
+}
+#resultTable {
+  border-collapse: collapse;
+  background-color: rgba(256, 256, 256, 0.8);
+}
+td {
+  padding: 3px;
+  border: 1px solid rgb(190, 22, 36);
+  // text-decoration: none;
+  // outline: none;
+  // display: inline-block;
+  // padding: 15px 30px;
+  // margin: 10px 20px;
+  // border-radius: 10px;
+  // box-shadow: 0 0 40px 40px rgb(190, 22, 36) inset, 0 0 0 0 rgb(190, 22, 36);
+  // font-family: "Times New Roman", sans-serif;
+  font-size: calc(5px + 2vmin);
+  // // letter-spacing: 2px;
+  color: rgb(190, 22, 36);
+  // transition: 0.15s ease-in-out;
+}
+#wrapperForTable {
+  position: relative;
+}
+#resultTable {
+  position: absolute;
+  right: 100px;
 }
