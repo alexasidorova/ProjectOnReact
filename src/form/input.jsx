@@ -12,9 +12,19 @@ class Input extends PureComponent {
     const { data } = this.props;
     console.log(data);
     return (
-      <label className="gender">
+      <label>
         {data.label}
-        <input type={data.type} name={data.name} onChange={this.onChange} ref={this.fieldEl} />
+        <br />
+        <input
+          type={data.type}
+          name={data.name}
+          id={data.id}
+          className={data.className}
+          onChange={this.onChange}
+          ref={this.fieldEl}
+        />
+        {' '}
+        <br />
       </label>
     );
   }

@@ -7,8 +7,8 @@ function Root() {
   return (
     <BrowserRouter>
       <div>
-        <Link to="/">form</Link>
-        <Link to="/foods">foods</Link>
+        <Link to="/">Посчитаем сколько уже было съедено?</Link>
+        <Link to="/foods">Вернулься к расчетам</Link>
         <Route exact path="/" component={Form} />
         <Route path="/foods" component={Foods} />
       </div>

@@ -15,42 +15,43 @@ module.exports = {
     modules: [path.join(__dirname, 'src'), 'node_modules']
   },
   module: {
-    rules: [{
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env', '@babel/preset-react'],
-          plugins: ['@babel/plugin-proposal-class-properties']
-        }
-      }
-    },
-    {
-      test: /\.s?css$/,
-      use: [
-        'css-hot-loader',
-        MiniCssExtractPlugin.loader,
-        'css-loader',
-
-        'resolve-url-loader',
-        {
-          loader: 'sass-loader',
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
           options: {
-            sourceMap: true,
-            sourceMapContents: false
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-proposal-class-properties']
           }
         }
-      ]
-    },
-    {
-      test: /\.(png|jpg|gif)$/,
-      use: ['file-loader']
-    },
-    {
-      test: /\.svg$/,
-      loader: 'svg-sprite-loader'
-    }
+      },
+      {
+        test: /\.s?css$/,
+        use: [
+          'css-hot-loader',
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+
+          'resolve-url-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              sourceMapContents: false
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader'
+      }
     ]
   },
   plugins: [

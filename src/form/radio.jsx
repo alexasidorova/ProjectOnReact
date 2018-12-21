@@ -19,6 +19,8 @@ class Radio extends PureComponent {
       <label className="gender">
         {data.label}
         <input type={data.type} name={data.name} onChange={this.onChange} ref={this.fieldEl} />
+        {' '}
+        <br />
       </label>
     );
   }

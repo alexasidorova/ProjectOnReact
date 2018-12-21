@@ -11,16 +11,16 @@ class Form extends React.Component {
     {
       label: 'Пол', name: 'sex', type: 'radio', value: 'woman', label: 'женский'
     },
-    { label: 'Вес (кг)', name: 'weight', type: 'number' },
-    { label: 'Рост (см)', name: 'height', type: 'number' },
-    { label: 'Возраст', name: 'old', type: 'number' },
+    { label: 'Вес (кг)', name: 'weight', type: 'number', id: 'weight', className: 'weight' },
+    { label: 'Рост (см)', name: 'height', type: 'number', id: 'height', className: 'height'},
+    { label: 'Возраст', name: 'old', type: 'number', id: 'old', className: 'old' },
     
-    //   label: 'Твоя активность',
-    { name: 'activity', type: 'radio', value: 'activity1', label: 'Низкая'},       
-    { name: 'activity', type: 'radio', value: 'activity2', label: 'Физические нагрузки 1-2 раза в неделю' },
-    { name: 'activity', type: 'radio', value: 'activity3', label: 'Физические нагрузки 3-4 раза в неделю' },
-    { name: 'activity', type: 'radio', value: 'activity4', label: 'Физические нагрузки 5-6 раз в неделю' },
-    { name: 'activity', type: 'radio', value: 'activity5', label: 'Физические нагрузки каждый день' }
+      
+    { name: 'activity', type: 'radio', value: 'activity1', label: 'Твоя активность:  Низкая',  id: 'activity1'},       
+    { name: 'activity', type: 'radio', value: 'activity2', label: 'Физические нагрузки 1-2 раза в неделю',  id: 'activity' },
+    { name: 'activity', type: 'radio', value: 'activity3', label: 'Физические нагрузки 3-4 раза в неделю',  id: 'activity' },
+    { name: 'activity', type: 'radio', value: 'activity4', label: 'Физические нагрузки 5-6 раз в неделю',id: 'activity' },
+    { name: 'activity', type: 'radio', value: 'activity5', label: 'Физические нагрузки каждый день',id: 'activity' }
       
     
    
@@ -66,7 +66,7 @@ class Form extends React.Component {
       result = active*(66 + 13.7 * data.weight + 5 * data.height - 6.8 * data.old);
     }
     console.log(result)
-    return <div>{result}</div>;
+    return <div id='totalCalories'>Тебе необходимо  {result} калорий в день!</div>;
   };
 
   render() {
@@ -107,14 +107,11 @@ class Form extends React.Component {
           <button type="button" onClick={this.onClickButton}>
             Посчитать
           </button>
+          {/* <div id='totalCalories'>Тебе необходимо  {result} калорий в день!</div> */}
         </form>
+       
       </div>
-      // <form onSubmit={this.onSubmit}>
-      //   {this.fields.map(fieldData => (
-      //     <Input {...fieldData} handleChange={this.handleChange} />
-      //   ))}
-      // </form>
-      // {this.calc()}
+      
     );
   }
 }
