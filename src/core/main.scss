@@ -171,6 +171,9 @@ td {
 #wrapperForTable {
   position: relative;
 }
+.hidden {
+  display: none;
+}
 #resultTable {
   position: absolute;
   right: 100px;

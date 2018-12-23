@@ -25,6 +25,8 @@ class Foods extends Component {
   }
 
   onClick = (protein, lipids, carbs, calories) => {
+    let table = document.querySelector('table');
+    table.classList.remove('hidden');
     this.setState({
       currentprotein: protein,
       currentlipids: lipids,
@@ -41,7 +43,7 @@ class Foods extends Component {
     //     <input className="add-task--button" type="submit" value="Добавить" />
     //   </form>
     <div id='wrapperForTable'>
-    <table id='resultTable'>
+    <table className="hidden" id='resultTable'>
     <tr>
       <td>Белки</td>
       <td>Жиры</td>

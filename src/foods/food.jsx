@@ -5,7 +5,7 @@ class Food extends PureComponent {
     console.log('CLICK', this.props);
     this.props.onClick(
       this.props.data.protein,
-      this.props.data.lipids,
+      this.props.data.lipid,
       this.props.data.carbs,
       this.props.data.calories
     );
@@ -13,7 +13,11 @@ class Food extends PureComponent {
 
   render() {
     const { data } = this.props;
-    return <div onClick={this.onClick}>{data.name}</div>;
+    return (
+      <div id="listFoods" onClick={this.onClick}>
+        {data.name}
+      </div>
+    );
   }
 }
 
